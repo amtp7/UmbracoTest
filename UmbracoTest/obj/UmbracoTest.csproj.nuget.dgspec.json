@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj": {}
+    "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj": {}
   },
   "projects": {
-    "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj": {
+    "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj",
+        "projectUniqueName": "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj",
         "projectName": "UmbracoTest",
-        "projectPath": "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj",
+        "projectPath": "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest.csproj",
         "packagesPath": "C:\\Users\\amtp1\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\UmbracoTest\\UmbracoTest\\UmbracoTest\\obj\\",
+        "outputPath": "C:\\Git\\UmbracoTest\\UmbracoTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amtp1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.ICU.ICU4C.Runtime": {
+              "target": "Package",
+              "version": "[68.2.0.9, )"
+            },
+            "Umbraco.Cms": {
+              "target": "Package",
+              "version": "[10.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
