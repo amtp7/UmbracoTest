@@ -1,0 +1,12 @@
+C:\Git\UmbracoTest\UmbracoTest.Domain\bin\Debug\net6.0\UmbracoTest.Domain.deps.json
+C:\Git\UmbracoTest\UmbracoTest.Domain\bin\Debug\net6.0\UmbracoTest.Domain.dll
+C:\Git\UmbracoTest\UmbracoTest.Domain\bin\Debug\net6.0\UmbracoTest.Domain.pdb
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\UmbracoTest.Domain.csproj.AssemblyReference.cache
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\UmbracoTest.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\UmbracoTest.Domain.AssemblyInfoInputs.cache
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\UmbracoTest.Domain.AssemblyInfo.cs
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\UmbracoTest.Domain.csproj.CoreCompileInputs.cache
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\UmbracoTest.Domain.dll
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\refint\UmbracoTest.Domain.dll
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\UmbracoTest.Domain.pdb
+C:\Git\UmbracoTest\UmbracoTest.Domain\obj\Debug\net6.0\ref\UmbracoTest.Domain.dll

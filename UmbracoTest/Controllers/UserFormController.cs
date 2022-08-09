@@ -28,6 +28,7 @@
         // GET: UserForm
         public ActionResult Index()
         {
+
             return View("~/Views/UserForm/UserForm.cshtml", new Form1 { Batatas = "batata1" });
         }
 
