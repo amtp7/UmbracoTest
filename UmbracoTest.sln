@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTest", "UmbracoTest\UmbracoTest.csproj", "{C8C2DC58-2965-41E8-B83A-7E6105B631BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UmbracoTest", "UmbracoTest\UmbracoTest.csproj", "{C8C2DC58-2965-41E8-B83A-7E6105B631BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTest.Application", "UmbracoTest.Application\UmbracoTest.Application.csproj", "{FD6449B8-358A-4DA0-BC71-72659913960C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTest.Domain", "UmbracoTest.Domain\UmbracoTest.Domain.csproj", "{C1B2BB11-53C6-4D81-8092-5777CB3A90D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTest.Data", "UmbracoTest.Data\UmbracoTest.Data.csproj", "{38636B8D-8499-44F6-9E8A-D9537338C300}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{C8C2DC58-2965-41E8-B83A-7E6105B631BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C2DC58-2965-41E8-B83A-7E6105B631BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C2DC58-2965-41E8-B83A-7E6105B631BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6449B8-358A-4DA0-BC71-72659913960C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6449B8-358A-4DA0-BC71-72659913960C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6449B8-358A-4DA0-BC71-72659913960C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6449B8-358A-4DA0-BC71-72659913960C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B2BB11-53C6-4D81-8092-5777CB3A90D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B2BB11-53C6-4D81-8092-5777CB3A90D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B2BB11-53C6-4D81-8092-5777CB3A90D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B2BB11-53C6-4D81-8092-5777CB3A90D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38636B8D-8499-44F6-9E8A-D9537338C300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38636B8D-8499-44F6-9E8A-D9537338C300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38636B8D-8499-44F6-9E8A-D9537338C300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38636B8D-8499-44F6-9E8A-D9537338C300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
