@@ -1,0 +1,16 @@
+﻿@model IEnumerable<UmbracoTest.ViewModels.Subscription>
+
+<div class="container text-center">
+    <div class="row">
+        @foreach (var subscription in Model)
+        {
+            <div class="col-4">
+                <a class="btn btn-primary w-100 h-100" href="@Url.Action("SelectSubscription", "Subscriptions", new { id = 0 })">
+                    @subscription.Name
+                    @subscription.Price
+                </a>
+            </div>
+        }
+    </div>
+</div>
+

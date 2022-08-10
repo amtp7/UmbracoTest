@@ -3722,6 +3722,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "UmbracoTest.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "UmbracoTest.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UmbracoTest.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UmbracoTest.Application.dll": {}
+        }
+      },
+      "UmbracoTest.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/UmbracoTest.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UmbracoTest.Domain.dll": {}
+        }
       }
     }
   },
@@ -13794,12 +13817,23 @@
         "umbraco.cms.web.website.10.1.0.nupkg.sha512",
         "umbraco.cms.web.website.nuspec"
       ]
+    },
+    "UmbracoTest.Application/1.0.0": {
+      "type": "project",
+      "path": "../UmbracoTest.Application/UmbracoTest.Application.csproj",
+      "msbuildProject": "../UmbracoTest.Application/UmbracoTest.Application.csproj"
+    },
+    "UmbracoTest.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UmbracoTest.Domain/UmbracoTest.Domain.csproj",
+      "msbuildProject": "../UmbracoTest.Domain/UmbracoTest.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.ICU.ICU4C.Runtime >= 68.2.0.9",
-      "Umbraco.Cms >= 10.1.0"
+      "Umbraco.Cms >= 10.1.0",
+      "UmbracoTest.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13828,7 +13862,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Git\\UmbracoTest\\UmbracoTest.Application\\UmbracoTest.Application.csproj": {
+              "projectPath": "C:\\Git\\UmbracoTest\\UmbracoTest.Application\\UmbracoTest.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -10,3 +10,6 @@ C:\Git\UmbracoTest\UmbracoTest.Application\obj\Debug\net6.0\UmbracoTest.Applicat
 C:\Git\UmbracoTest\UmbracoTest.Application\obj\Debug\net6.0\refint\UmbracoTest.Application.dll
 C:\Git\UmbracoTest\UmbracoTest.Application\obj\Debug\net6.0\UmbracoTest.Application.pdb
 C:\Git\UmbracoTest\UmbracoTest.Application\obj\Debug\net6.0\ref\UmbracoTest.Application.dll
+C:\Git\UmbracoTest\UmbracoTest.Application\bin\Debug\net6.0\UmbracoTest.Domain.dll
+C:\Git\UmbracoTest\UmbracoTest.Application\bin\Debug\net6.0\UmbracoTest.Domain.pdb
+C:\Git\UmbracoTest\UmbracoTest.Application\obj\Debug\net6.0\UmbracoTest.Application.csproj.CopyComplete

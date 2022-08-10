@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "UmbracoTest.Application/1.0.0": {
+        "dependencies": {
+          "UmbracoTest.Domain": "1.0.0"
+        },
         "runtime": {
           "UmbracoTest.Application.dll": {}
+        }
+      },
+      "UmbracoTest.Domain/1.0.0": {
+        "runtime": {
+          "UmbracoTest.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "UmbracoTest.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UmbracoTest.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

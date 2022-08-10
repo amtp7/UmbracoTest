@@ -1,5 +1,9 @@
 namespace UmbracoTest
 {
+    using Microsoft.AspNetCore.Mvc.Razor;
+    using UmbracoTest.Application.Interfaces;
+    using UmbracoTest.Application.Services;
+
     public class Startup
     {
         private readonly IWebHostEnvironment _env;
@@ -34,6 +38,13 @@ namespace UmbracoTest
                 .AddWebsite()
                 .AddComposers()
                 .Build();
+
+            services.Configure<RazorViewEngineOptions>(o =>
+            {
+                o.AreaViewLocationFormats.Add("/Partials/{0}" + RazorViewEngine.ViewExtension);
+            });
+
+            services.AddTransient<ISubscriptionService, SubscriptionService>();
         }
 
         /// <summary>
