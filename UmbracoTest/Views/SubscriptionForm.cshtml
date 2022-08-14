@@ -1,0 +1,13 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.SubscriptionForm>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+	Layout = "_layout";
+}
+
+@{
+    var result = int.TryParse(HttpContextAccessor?.HttpContext?.Request.Query["id"] ?? string.Empty, out int parsedId);  
+}
+
+<vc:user-form id="parsedId"></vc:user-form>

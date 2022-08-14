@@ -10,7 +10,8 @@
             {
                 Id = subscription.Id,
                 Name = subscription.Name,
-                Price = subscription.Price
+                Price = subscription.Price,
+                Description = subscription.Description
             };
         }
     }

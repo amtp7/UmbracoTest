@@ -1,0 +1,48 @@
+﻿@using UmbracoTest.Controllers
+@model UmbracoTest.ViewModels.EssentialForm
+
+@using (Html.BeginUmbracoForm<UserFormController>(nameof(UserFormController.Submit)))
+{
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-6">
+                @Html.LabelFor(model => model.Name, new { @class = "formLabel", @required= "required" })
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @placeholder = "Enter your name" , @id="name", @required= "required" })
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-6">
+                @Html.LabelFor(model => model.Age, new { @class = "formLabel" })
+                @Html.TextBoxFor(model => model.Age, new { @class = "form-control", @placeholder = "Enter your age" , @id="age", @required= "required" })
+                @Html.ValidationMessageFor(model => model.Age)
+            </div>
+        </div>
+
+        @{
+            var plans = new List<SelectListItem>();
+            plans.Add(new SelectListItem { Value = "1", Text = "Monthly" });
+            plans.Add(new SelectListItem { Value = "2", Text = "Quarterly" });
+            plans.Add(new SelectListItem { Value = "3", Text = "Semiannual" });
+            plans.Add(new SelectListItem { Value = "4", Text = "Yearly" });
+        }
+
+        <div class="row">
+            <div class="form-group col-6">
+                @Html.LabelFor(model => model.SubscriptionPlan, new { @class = "formLabel" })
+                @Html.DropDownListFor(model => model.SubscriptionPlan, plans, "-- Select a subscription plan --", new { @class = "form-control", @placeholder = "Enter your name" , @id="subscriptionPlan", @required= "required" })
+                @Html.ValidationMessageFor(model => model.SubscriptionPlan)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <button class="btn btn-primary w-100" type="submit">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+
+    </div>
+}

@@ -1,20 +1,36 @@
 ﻿namespace UmbracoTest.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-    using UmbracoTest.ViewModels;
+    using Umbraco.Cms.Core.Cache;
+    using Umbraco.Cms.Core.Logging;
+    using Umbraco.Cms.Core.Routing;
+    using Umbraco.Cms.Core.Services;
+    using Umbraco.Cms.Core.Web;
+    using Umbraco.Cms.Infrastructure.Persistence;
+    using Umbraco.Cms.Web.Website.Controllers;
 
-    public class UserFormController : Controller
+    public class UserFormController : SurfaceController
     {
-        // GET: UserForm
-        public ActionResult Index()
+        public UserFormController(
+            IUmbracoContextAccessor umbracoContextAccessor, 
+            IUmbracoDatabaseFactory databaseFactory, 
+            ServiceContext services, 
+            AppCaches appCaches, 
+            IProfilingLogger profilingLogger, 
+            IPublishedUrlProvider publishedUrlProvider) 
+                : base(umbracoContextAccessor, databaseFactory, services, appCaches, profilingLogger, publishedUrlProvider)
         {
-            return View("~/Views/UserForm/UserForm.cshtml", new EssentialForm { Batatas = "batata1" });
         }
 
-        // GET: Submit
-        public ActionResult Submit()
+        // POST: Submit
+        [HttpPost]
+        public IActionResult Submit()
         {
-            return View("~/Views/UserForm/Submit.cshtml");
+            if (!ModelState.IsValid)
+            {
+                return CurrentUmbracoPage();
+            }                
+            return Redirect("/homepage");
         }
     }
 }

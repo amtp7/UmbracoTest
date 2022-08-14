@@ -15,10 +15,10 @@
         private readonly ISubscriptionService subscriptionService;
 
         public SubscriptionsController(
-            IUmbracoContextAccessor umbracoContextAccessor, 
-            IUmbracoDatabaseFactory databaseFactory, 
-            ServiceContext services, AppCaches appCaches, 
-            IProfilingLogger profilingLogger, 
+            IUmbracoContextAccessor umbracoContextAccessor,
+            IUmbracoDatabaseFactory databaseFactory,
+            ServiceContext services, AppCaches appCaches,
+            IProfilingLogger profilingLogger,
             IPublishedUrlProvider publishedUrlProvider,
             ISubscriptionService subscriptionService)
                 : base(umbracoContextAccessor, databaseFactory, services, appCaches, profilingLogger, publishedUrlProvider)
@@ -33,27 +33,7 @@
 
         public IActionResult SelectSubscription(int id)
         {
-            switch(id)
-            {
-                case 1:
-                    return Redirect(Url.Action("UserForm") ?? string.Empty);
-                case 2:
-                    return Redirect(Url.Action("UserForm") ?? string.Empty);
-                case 3:
-                    return Redirect(Url.Action("UserForm") ?? string.Empty);
-                default:
-                    return Redirect(Url.Action("Error") ?? string.Empty);
-            }
-            
-        }
-        public IActionResult UserForm()
-        {
-            return View("~/Views/UserForm/UserForm.cshtml");
-        }
-
-        public IActionResult Error()
-        {
-            return View("~/Views/ErrorPage.cshtml");
+            return Redirect("/subscriptionform" + $"?id={id}");
         }
     }
 }

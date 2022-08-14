@@ -2,5 +2,6 @@
 {
     public class PlusForm
     {
+        public string? Name { get; set; }
     }
 }
